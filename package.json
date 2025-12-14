@@ -1,18 +1,27 @@
 {
   "name": "@deshmukhsahil/cv",
   "version": "1.0.0",
-  "description": "Terminal resume Sahil Deshmukh — run via npx",
+  "description": "Terminal CV for Sahil Deshmukh — run via npx",
   "type": "module",
   "bin": {
-    "deshmukhsahil": "./bin/index.js"
+    "cv": "./bin/index.js"
   },
   "files": [
-    "bin"
+    "bin/"
   ],
+  "keywords": [
+    "resume",
+    "cv",
+    "cli",
+    "npx",
+    "terminal",
+    "portfolio"
+  ],
+  "author": "Sahil Deshmukh <sahildeshmukh2898@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "boxen": "^8.0.1",
-    "chalk": "^5.6.2",
-    "wrap-ansi": "^9.0.2"
+    "chalk": "^5.3.0",
+    "boxen": "^7.1.1",
+    "wrap-ansi": "^8.1.0"
   }
 }
