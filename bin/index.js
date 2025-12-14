@@ -6,6 +6,7 @@ import boxen from "boxen";
 const h1 = (t) => chalk.bold.cyan(t);
 const label = (t) => chalk.yellow.bold(t);
 const h2 = (t) => chalk.bold.yellow(t);
+const dim = chalk.gray;
 
 const header = [
   h1("SAHIL DESHMUKH"),
@@ -27,7 +28,20 @@ const summary = [
   "and modern React-based user experiences.",
 ].join("\n");
 
-const output = [header, summary].join("\n");
+const experience = [
+  "",
+  h2("Work Experience"),
+  "",
+  chalk.bold("Full-Stack Lead (Freelance) — OTT Streaming Platform"),
+  dim("Mar 2024 – Jul 2025"),
+  "",
+  "• Led end-to-end development of a full-scale OTT platform.",
+  "• Built backend APIs, frontend UI, and cloud infrastructure.",
+  "• Implemented authentication, subscriptions, and video streaming.",
+  "• Scaled platform to 2,500+ users.",
+].join("\n");
+
+const output = [header, summary, experience].join("\n");
 
 console.log(
   boxen(output, {
