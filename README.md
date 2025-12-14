@@ -39,12 +39,15 @@ Sections included:
 
 ## Project structure
 
+```text
 deshmukhsahil/
-├─ bin/
-│  └─ index.js
-├─ package.json
-├─ README.md
-└─ .gitignore
+├── bin/
+│   └── index.js
+├── package.json
+├── README.md
+└── .gitignore
+```
+
 
 
 ## Development / Local testing
