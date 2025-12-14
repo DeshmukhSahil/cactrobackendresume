@@ -1,7 +1,7 @@
 {
   "name": "@deshmukhsahil/cv",
   "version": "1.0.0",
-  "description": "Terminal CV for Sahil Deshmukh — run via npx",
+  "description": "Terminal CV Sahil Deshmukh — run via npx",
   "type": "module",
   "bin": {
     "cv": "./bin/index.js"
