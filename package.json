@@ -1,12 +1,11 @@
 {
-  "name": "cactrobackendtest",
+  "name": "@deshmukhsahil/cv",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Terminal resume Sahil Deshmukh — run via npx",
+  "type": "module",
+  "bin": {
+    "deshmukhsahil": "./bin/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "files": ["bin"],
+  "license": "MIT"
 }
