@@ -4,9 +4,15 @@ import chalk from "chalk";
 import boxen from "boxen";
 
 const h1 = (t) => chalk.bold.cyan(t);
-const label = (t) => chalk.yellow.bold(t);
 const h2 = (t) => chalk.bold.yellow(t);
+const label = (t) => chalk.yellow.bold(t);
 const dim = chalk.gray;
+
+// simple URL formatter so links stand out
+function formatUrl(url) {
+  if (!url) return dim("(not provided)");
+  return chalk.underline(url);
+}
 
 const header = [
   h1("SAHIL DESHMUKH"),
@@ -15,8 +21,12 @@ const header = [
   `${label("Phone:")} 7020676394`,
   `${label("Email:")} sahildeshmukh2898@gmail.com`,
   `${label("Location:")} Khamgaon, Maharashtra`,
-  `${label("LinkedIn:")} https://linkedin.com/in/deshmukhsahil`,
-  `${label("GitHub:")} https://github.com/DeshmukhSahil`,
+  `${label("LinkedIn:")} ${formatUrl(
+    "https://linkedin.com/in/deshmukhsahil"
+  )}`,
+  `${label("GitHub:")} ${formatUrl(
+    "https://github.com/DeshmukhSahil"
+  )}`,
 ].join("\n");
 
 const summary = [
