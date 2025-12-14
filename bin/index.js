@@ -3,12 +3,16 @@
 import chalk from "chalk";
 import boxen from "boxen";
 
+// detect terminal width safely
+const terminalWidth = process.stdout.columns || 80;
+const boxWidth = Math.min(terminalWidth - 4, 100);
+
 const h1 = (t) => chalk.bold.cyan(t);
 const h2 = (t) => chalk.bold.yellow(t);
 const label = (t) => chalk.yellow.bold(t);
 const dim = chalk.gray;
 
-// simple URL formatter so links stand out
+// format URLs consistently
 function formatUrl(url) {
   if (!url) return dim("(not provided)");
   return chalk.underline(url);
@@ -58,5 +62,6 @@ console.log(
     padding: 1,
     borderStyle: "round",
     borderColor: "cyan",
+    width: boxWidth,
   })
 );
