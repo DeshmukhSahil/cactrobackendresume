@@ -6,6 +6,13 @@
   "bin": {
     "deshmukhsahil": "./bin/index.js"
   },
-  "files": ["bin"],
-  "license": "MIT"
+  "files": [
+    "bin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2",
+    "wrap-ansi": "^9.0.2"
+  }
 }
